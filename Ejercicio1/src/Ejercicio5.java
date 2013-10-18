@@ -6,7 +6,7 @@ public class Ejercicio5 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner( System.in );
-		double mbytes, mbps, tiempo;
+		double mbytes, mbps;
 		
 		System.out.print( "Introduzca el tamaño del archivo: " ); 
 		mbytes = input.nextInt(); 
@@ -14,7 +14,11 @@ public class Ejercicio5 {
 		mbps = input.nextInt(); 
 		input.close();
 		
-		tiempo = ((mbytes * 8) / mbps);
-		System.out.print("\nEl tiempo que tardará la descarga es de " + tiempo + " segundos");
+		mbytes = mbytes * 1024 * 1024 * 8; //También se podría poner " mbytes * Marh.pow (2, 20) * 8 "
+		mbps = mbps * 1000000;
+		
+		System.out.print("Datos: " + mbytes + " bits");
+		System.out.print("\nmbps: " + mbps + " bps");
+		System.out.print("\nTiempo para transmitir " + mbytes/mbps  + " sg");
 	}
 }

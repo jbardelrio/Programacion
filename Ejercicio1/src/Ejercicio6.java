@@ -25,7 +25,7 @@ public class Ejercicio6 {
 		v3 = (1.0 < X)&& (X < Z+7.0);
 		System.out.print("\nEl tercer ejemplo es " + v3);
 		
-		X = 1; Y = 4; Z= 10; PI = 3.14;
+		X = 1; Y = 4; Z= 10; PI = Math.PI;
 		v4 = (PI * Math.pow(X, 2) > Y || 2 * PI * X <= Z);
 		System.out.print("\nEl cuarto ejemplo es " + v4);
 		
