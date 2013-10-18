@@ -16,6 +16,8 @@ public class Principal {
 		ramon = new Alumno();
 		juan.nombre="Juan";
 		ramon.nombre="Ramon";
+		
+		juan.mensaje();
 	}
 
 }
