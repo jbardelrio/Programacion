@@ -14,7 +14,7 @@ public class Ejercicio5 {
 		mbps = input.nextInt(); 
 		input.close();
 		
-		tiempo = (mbytes / mbps);
+		tiempo = ((mbytes * 8) / mbps);
 		System.out.print("\nEl tiempo que tardará la descarga es de " + tiempo + " segundos");
 	}
 }
