@@ -14,7 +14,7 @@ public class Principal {
 		
 		juan = new Alumno();
 		ramon = new Alumno();
-		juan.nombre="Juan";
+		juan.nombre="Alfonso";
 		ramon.nombre="Ramon";
 		
 		juan.mensaje();
