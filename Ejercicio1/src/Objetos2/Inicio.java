@@ -10,7 +10,7 @@ public class Inicio {
 		objeto = new Alumnos();
 		
 		
-	
+
         
 	}
 
