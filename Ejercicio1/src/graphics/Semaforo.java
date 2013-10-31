@@ -10,7 +10,7 @@ public class Semaforo {
 		
 		caja = new Rectangle(10, 10, 60, 110);
 		caja.draw();
-		//Es mejor que para cada objeto creemos una variable, porque sino se perdería la anterior
+		//Es mejor que, para cada objeto, creemos una variable, porque sino se perdería la anterior
 		//si definimos otra vez la misma. Por eso la siguiente caja la llamamos de otro modo
 		palo = new Rectangle(30,120,25,200);
 		palo.draw();
