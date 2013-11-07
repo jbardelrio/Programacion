@@ -20,7 +20,7 @@ public class Ejercicio4 {
 		
 		if (numero1 <= numero2 && numero1 <= numero3) {
 			System.out.println("El número más pequeño es: " + numero1);
-		}else if(numero2 <= numero1 && numero2 <= numero3){
+		}else if(numero2 <= numero3){
 			System.out.println("El número más pequeño es: " + numero2);
 		}else{
 			System.out.println("El número más pequeño es: " + numero3);
