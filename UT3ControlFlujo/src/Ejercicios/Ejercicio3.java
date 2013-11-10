@@ -15,13 +15,13 @@ public class Ejercicio3 {
 
 		if (precio_inicial < 20) {
 			precio_final = precio_inicial - (precio_inicial * 10) / 100;
-			System.out.println(precio_final);
+			System.out.println("El precio con descuento es: " +precio_final);
 		}else if (precio_inicial >= 20 && precio_inicial <= 50) {
 			precio_final = precio_inicial - (precio_inicial * 20) / 100;
-			System.out.println(precio_final);
+			System.out.println("El precio con descuento es: " +precio_final);
 		}else{
 			precio_final = precio_inicial - (precio_inicial * 25) / 100;
-			System.out.println(precio_final);
+			System.out.println("El precio con descuento es: " + precio_final);
 		}
 	}
 
