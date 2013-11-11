@@ -28,7 +28,7 @@ public class Ejercicio6 {
 		System.out.println("Dime qué quieres sacar en tu jugada (piedra, papel o tijera): ");
 		jugada = teclado.nextLine();
 		teclado.close();
-		if (jugada.equals("piedra")) {
+		if (jugada.toLowerCase().equals("piedra")) {
 			if (resultado.equals("piedra")) {
 				System.out.println("Empate");	
 			}else if (resultado.equals("papel")) {
@@ -37,7 +37,7 @@ public class Ejercicio6 {
 				System.out.println("Ganas");
 			}	
 		}
-		if (jugada.equals("papel")) {
+		if (jugada.toLowerCase().equals("papel")) {
 			if (resultado.equals("piedra")) {
 				System.out.println("Ganas");
 			}else if (resultado.equals("papel")) {
@@ -47,7 +47,7 @@ public class Ejercicio6 {
 			}
 			
 		}
-		if (jugada.equals("tijera")){
+		if (jugada.toLowerCase().equals("tijera")){
 			if (resultado.equals("piedra")) {
 				System.out.println("Pierdes");
 			}else if (resultado.equals("papel")) {
