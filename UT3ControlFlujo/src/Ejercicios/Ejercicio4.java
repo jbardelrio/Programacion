@@ -10,6 +10,8 @@ public class Ejercicio4 {
 		double tamaño;
 		double porcentaje_lleno;
 		double consumo;
+		double litros;
+		double distancia;
 		
 		System.out.println("Dime el tamaño del depósito: ");
 		tamaño = teclado.nextDouble();
@@ -19,7 +21,12 @@ public class Ejercicio4 {
 		consumo = teclado.nextDouble();
 		teclado.close();
 		
-		
+		litros = (tamaño * porcentaje_lleno ) / 100;
+		distancia = (litros * 100) / consumo;
+		System.out.println(String.format("Le queda gasolina para %.3f", distancia) + " kms.");
+				if (distancia < 30) {
+					System.out.println("Debes repostar en breve.");
+				}
 	}
 
 }
