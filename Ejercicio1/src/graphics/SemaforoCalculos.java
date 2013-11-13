@@ -22,11 +22,11 @@ public class SemaforoCalculos {
 		
 		palo.fill();
 		
-		verde=new Ellipse(centro_x-diametro_disco/2, centro_y+alto, alto, ancho);
+		verde=new Ellipse(centro_x-diametro_disco/4, centro_y+diametro_disco/2, diametro_disco/2,  diametro_disco/2 );
 		verde.setColor(new Color(0,200,0));
-		ambar=new Ellipse(centro_x-diametro_disco/2, centro_y+alto, alto, ancho);
+		ambar=new Ellipse(centro_x-diametro_disco/4, centro_y-diametro_disco/2, diametro_disco/2,  diametro_disco/2);
 		ambar.setColor(new Color(255,255,0));
-		rojo=new Ellipse(centro_x-diametro_disco/2, centro_y+alto, alto, ancho);
+		rojo=new Ellipse(centro_x-diametro_disco/4, centro_y-diametro_disco*1.5, diametro_disco/2,  diametro_disco/2);
 		rojo.setColor(new Color(255,0,0));
 
 		verde.fill();
