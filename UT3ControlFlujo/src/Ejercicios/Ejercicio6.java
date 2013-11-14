@@ -9,7 +9,8 @@ public class Ejercicio6 {
 		Scanner teclado = new Scanner(System.in);
 		double ph = 0;
 		teclado.close();
-		
+		System.out.println("Dime el ph: ");
+		ph = teclado.nextDouble();
 		if (ph < 7.0 && ph > 3.0) {
 			System.out.println("La solución es ácida.");
 		}else if (ph < 3.0) {
