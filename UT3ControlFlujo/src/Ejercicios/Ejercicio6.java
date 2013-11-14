@@ -7,13 +7,14 @@ public class Ejercicio6 {
  */
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		double ph = 0;
+		double ph = 0.0;
 		System.out.println("Dime el ph: ");
 		ph = teclado.nextDouble();
 		teclado.close();
-		if (ph < 7.0 && ph > 3.0) {
+		
+		if (ph >= 3 && ph <= 7) {
 			System.out.println("La solución es ácida.");
-		}else if (ph < 3.0) {
+		}else if (ph < 3) {
 			System.out.println("La solución es peligrosamente ácida.");
 		}else{
 			System.out.println("El ph está bien.");
