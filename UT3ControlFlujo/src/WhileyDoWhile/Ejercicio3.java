@@ -17,7 +17,7 @@ public class Ejercicio3 {
 			}
 			
 		} while (numero % 2 != 0);
-		
+		teclado.close();
 		System.out.println("El último número introducido es par.");
 	}
 

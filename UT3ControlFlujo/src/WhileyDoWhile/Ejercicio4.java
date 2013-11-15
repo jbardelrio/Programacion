@@ -15,6 +15,7 @@ public class Ejercicio4 {
 			numero = teclado.nextInt();
 			
 		} while (numero >=  0);
+		teclado.close();
 		System.out.println("El número " + numero + " es negativo.");
 		
 		

@@ -18,11 +18,7 @@ public class Ejercicio5 {
 				System.out.println("El número que has introducido es: " + numero);
 			}
 		} while (numero >=  0);
-		System.out.println("El número " + numero + " es negativo.");
-		
-		
+		teclado.close();
+		System.out.println("Fin del programa.");
 	}
-
-	
-
 }

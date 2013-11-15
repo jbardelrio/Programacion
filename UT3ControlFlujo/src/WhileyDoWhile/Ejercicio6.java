@@ -50,6 +50,8 @@ public class Ejercicio6 {
 				break;
 			}
 		} while (respuesta.equals("+") || respuesta.equals("-") || respuesta.equals("*") || respuesta.equals("/"));
+		teclado.close();
+		System.out.println("Fin del programa.");
 	}		
 }
 
