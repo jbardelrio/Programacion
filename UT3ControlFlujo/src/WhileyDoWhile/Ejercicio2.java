@@ -21,7 +21,7 @@ public class Ejercicio2 {
 			}
 			
 		} while (numero != 0);
-		
+		teclado.close();
 		System.out.println("Has introducido " + (contador-1) + " números.");
 		if (contador>1){
 			System.out.println("El resultado de multiplicarlos todos es: " + multiplicacion);
