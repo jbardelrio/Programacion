@@ -12,7 +12,7 @@ public class TablaMultiplicar {
 		for (linea = 1; linea <= 10; linea++) {
 			System.out.println(numero + " x " + linea + " = " + (numero*linea));
 		}
-
+		teclado.close();
 	}
 
 }

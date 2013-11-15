@@ -12,6 +12,7 @@ public class Media3numeros {
 			numero = teclado.nextInt();
 			suma += numero;
 		}
+		teclado.close();
 		media = suma / 3;
 		System.out.println("La media es: " + media);
 	}
