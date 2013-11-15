@@ -7,16 +7,17 @@ public class Ejercicio5 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		int numero;
-		int contador = 0;
+		boolean imprimir;
 		
+		imprimir=true;
 		do {
 			System.out.println("Dime un número: ");
 			numero = teclado.nextInt();
-			contador++;
-			
-			if (contador % 2 != 0) {
+	
+			if (imprimir && numero >= 0) {
 				System.out.println("El número que has introducido es: " + numero);
 			}
+			imprimir=!imprimir;
 		} while (numero >=  0);
 		teclado.close();
 		System.out.println("Fin del programa.");
