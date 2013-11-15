@@ -22,8 +22,8 @@ public class Ejercicio2 {
 			
 		} while (numero != 0);
 		
-		System.out.println("Has introducido " + contador + " números.");
-		System.out.println("El resultado de mulotiplicarlos todos es: " + multiplicacion);
+		System.out.println("Has introducido " + (contador-1) + " números.");
+		System.out.println("El resultado de multiplicarlos todos es: " + multiplicacion);
 	}
 
 }
