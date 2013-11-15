@@ -23,7 +23,7 @@ public class Ejercicio2 {
 		} while (numero != 0);
 		
 		System.out.println("Has introducido " + contador + " números.");
-		System.out.println("El resultadode mulotiplicarlos todos es: " + multiplicacion);
+		System.out.println("El resultado de mulotiplicarlos todos es: " + multiplicacion);
 	}
 
 }
