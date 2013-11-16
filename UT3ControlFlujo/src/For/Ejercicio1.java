@@ -5,9 +5,9 @@ public class Ejercicio1 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		for (int i = 0; i < 5; i++) {
-			String frase;
+			String frase = "";
 			System.out.println("Escribe una frase: ");
-			frase = teclado.next();
+			frase = teclado.nextLine();
 			System.out.println(frase);
 		}
 		teclado.close();
