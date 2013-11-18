@@ -9,12 +9,12 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		String respuesta = "s";
+		String respuesta ="s";
 		
 		do {
 			int maquina = 0;
-			String jugada = "";
-			String resultado = "";
+			String jugada = " ";
+			String resultado = " ";
 			maquina = (int )(Math.random() * 3 + 1);
 			switch (maquina) {
 			case 1: resultado = "piedra";
@@ -24,17 +24,13 @@ public class Ejercicio3 {
 			case 3: resultado = "tijera";	
 				break;
 			}
-			
-			System.out.println("Dime qué quieres sacar en tu jugada (piedra, papel o tijera): ");
-			jugada = teclado.nextLine();
-			jugada = jugada.toLowerCase();
-			
-			if (!(jugada.equals("piedra") || jugada.equals("papel") || jugada.equals("tijera"))) {
-				System.out.println("Jugada no válida, por favor, elige piedra, papel o tijera: ");
-				jugada = teclado.nextLine();
-				jugada = jugada.toLowerCase();
-			}
-			
+				
+				do {
+					System.out.println("Dime qué quieres sacar en tu jugada (piedra, papel o tijera): ");
+					jugada = teclado.nextLine();
+					jugada = jugada.toLowerCase();
+				} while (!(jugada.equals("piedra") || jugada.equals("papel") || jugada.equals("tijera"))); 
+				
 			if (jugada.equals("piedra")) {
 				if (resultado.equals("piedra")) {
 					System.out.println("Empate");	
@@ -68,6 +64,7 @@ public class Ejercicio3 {
 			System.out.println();
 			System.out.println("¿Hace otra partidita [s/n]?");
 			respuesta = teclado.next();
+			
 		} while (respuesta.equals("s") || respuesta.equals("S"));
 		System.out.println("Fin del juego.");
 		teclado.close();
