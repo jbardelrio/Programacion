@@ -7,6 +7,7 @@ public class Ejercicio1 {
 //Posteriormente, el programa le preguntará al usuario si quiere insertar
 //otro número, con un mensaje como este:"¿Quiere insertar otro número [s/n]?".
 //Debes validar también esta respuesta.
+	
 	public static void main(String[] args) {
 		int numero;
 		String respuesta = "s";
