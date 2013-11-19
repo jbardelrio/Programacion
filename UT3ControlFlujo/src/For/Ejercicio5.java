@@ -13,11 +13,12 @@ public class Ejercicio5 {
 		System.out.println("Introduce los 2 números separados por un espacio: ");
 		n1 = teclado.nextInt();
 		n2 = teclado.nextInt();
-		do {
+		if (n1 > n2) {
 			System.out.println("Introduce primero el menor y luego el mayor: ");
 			n1 = teclado.nextInt();
 			n2 = teclado.nextInt();
-		} while (n1 > n2);
+		}
+		
 		for (int i = n1; i <= n2; i++) {
 			suma += i;
 		}
