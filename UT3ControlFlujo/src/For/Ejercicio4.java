@@ -7,6 +7,7 @@ public class Ejercicio4 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		int numeroveces;
+		int numero;
 		int suma = 0;
 		double media;
 		String cadena ="";
@@ -14,12 +15,12 @@ public class Ejercicio4 {
 		System.out.println("Indica cuantos números vas a introducir: ");
 		numeroveces = teclado.nextInt();
 		
-		for (int i = 0; i <= numeroveces; i++) {
+		for (int i = 1; i <= numeroveces; i++) {
 			System.out.println("Introduce un número: ");
-			i = teclado.nextInt();
-			suma +=i;
+			numero = teclado.nextInt();
+			suma +=numero;
 			if (i %2 == 0) {
-				cadena = cadena + i + " ";
+				cadena = cadena + numero + " ";
 			}
 		}
 		teclado.close();
