@@ -7,7 +7,7 @@ public class Ejercicio5 {
 //es mayor que el segundo, se volverán a pedir otros dos números hasta que 
 //el primer número insertado sea menor o igual que el segundo.
 	public static void main(String[] args) {
-		int n1= 2, n2 = 1;
+		int n1, n2;
 		int suma = 0;
 		Scanner teclado = new Scanner(System.in);
 		do {
