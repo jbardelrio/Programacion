@@ -9,19 +9,17 @@ public class Ejercicio1 {
 //Debes validar también esta respuesta.
 	
 	public static void main(String[] args) {
-		int numero;
+		
 		String respuesta = "s";
 		Scanner teclado = new Scanner(System.in);
 		
 		do {
 			int multiplicacion = 1;
-			System.out.println("Introduce el número: ");
-			numero = teclado.nextInt();
-			
-				if (numero < 0) {
-					System.out.println("El número intruducido es negativo, introduce otro nuevo: ");
+			int numero = 0;
+				do {
+					System.out.println("Introduce un número positivo: ");
 					numero = teclado.nextInt();
-				}
+				} while (numero < 0);
 				
 				for (int i = 1; i < numero + 1; i++) {
 					multiplicacion *= i;
