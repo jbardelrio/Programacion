@@ -7,7 +7,7 @@ public class Ejercicio2 {
 //vaya introduciendo números y se vayan imprimiendo las tablas correspondientes. 
 //El programa termina cuando se introduce un número  que no esté entre 1 y 10.
 	public static void main(String[] args) {
-		int numero;
+		int numero = 1;
 		Scanner teclado = new Scanner(System.in);
 		
 		do {
