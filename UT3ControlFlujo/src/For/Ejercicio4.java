@@ -19,7 +19,7 @@ public class Ejercicio4 {
 			System.out.println("Introduce un número: ");
 			numero = teclado.nextInt();
 			suma +=numero;
-			if (i %2 == 0) {
+			if (numero %2 == 0) {
 				cadena = cadena + numero + " ";
 			}
 		}
