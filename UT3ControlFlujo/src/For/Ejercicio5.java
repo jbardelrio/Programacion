@@ -7,14 +7,11 @@ public class Ejercicio5 {
 //es mayor que el segundo, se volverán a pedir otros dos números hasta que 
 //el primer número insertado sea menor o igual que el segundo.
 	public static void main(String[] args) {
-		int n1, n2;
+		int n1= 2, n2 = 1;
 		int suma = 0;
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Introduce los 2 números separados por un espacio: ");
-		n1 = teclado.nextInt();
-		n2 = teclado.nextInt();
 		do {
-			System.out.println("Introduce primero el menor y luego el mayor: ");
+			System.out.println("Introduce los 2 números separados por un espacio: ");
 			n1 = teclado.nextInt();
 			n2 = teclado.nextInt();
 		} while (n1 > n2);
