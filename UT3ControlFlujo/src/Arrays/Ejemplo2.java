@@ -1,6 +1,5 @@
 package Arrays;
 import java.util.Scanner;
-import java.util.Scanner;
 
 public class Ejemplo2 {
 //Hacer el ejercicio 1 de los FOR pero con un array
@@ -16,6 +15,7 @@ public class Ejemplo2 {
 			System.out.println(" " + frase[i]);
 		}
 		System.out.println("Fin del programa.");
+		teclado.close();
 	}
 
 }
