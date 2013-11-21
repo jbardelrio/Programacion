@@ -76,6 +76,7 @@ public class Ejercicio2 {
 		cuerpo.translate(10, 0);
 		rueda1.translate(10, 0);
 		rueda2.translate(10, 0);
+		
 		} while (movimiento = true);
 	}
 

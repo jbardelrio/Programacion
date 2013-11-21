@@ -43,7 +43,8 @@ public class Ejercicio1 {
 		
 		Thread.sleep(1000);
 		
-		
+		disco.translate(0,radio_disco/2*0);
+		disco.setColor(new Color(255, 255, 255));
 		} while (movimiento = true);
 	}
 
