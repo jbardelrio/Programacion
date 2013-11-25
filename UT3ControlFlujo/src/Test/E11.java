@@ -14,14 +14,10 @@ public class E11 {
 		System.out.print("0 ");
 		default:
 		System.out.print("def ");
-		case x
-		-
-		1:
+		case x - 1:
 		System.out.print("1 ");
 		break;
-		case x
-		-
-		2:
+		case x - 2:
 		System.out.print("2 ");
 		}
 		}
