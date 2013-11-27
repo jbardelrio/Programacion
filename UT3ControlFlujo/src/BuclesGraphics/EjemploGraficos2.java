@@ -23,9 +23,12 @@ public class EjemploGraficos2 {
 		
 		pelota.setColor(color);
 		pelota.fill();
-		
-		movimiento_x = (int)(Math.random()*7+1)-3;
-		movimiento_y = (int)(Math.random()*7+1)-3;
+		//Fórmula para desplazamiento aleatorio: (int) (Math.random() * (max-min+1)) + min
+		movimiento_x = (int) (Math.random() * (5-(-5)+1)) -5; //Simplicado sería (int) (Math.random() *11) -5;
+		movimiento_y = (int) (Math.random() * (5-(-5)+1)) -5; //Simplicado sería (int) (Math.random() *11) -5;
+		//Aqui le decimos que, si sale 0 en alguno de los moviemintos X o Y, lo incremente en 1 para que no se quede parado
+		if (movimiento_x == 0) movimiento_x++;
+		if (movimiento_y == 0) movimiento_y++;
 		while(true)
 		{
 			pelota.translate(movimiento_x, 0);
@@ -35,7 +38,7 @@ public class EjemploGraficos2 {
 			pelota.translate(0, movimiento_y);
 			if ((pelota.getY()+40)>400 || pelota.getY() < 0) movimiento_y=-movimiento_y;
 			
-			Thread.sleep(40);
+			Thread.sleep(10);
 		}
 
 	}
