@@ -20,7 +20,7 @@ public class Ejercicio4 {
 		
 		colores[0] = new Color(255,0,0);
 		colores[1] = Color.MAGENTA;
-		colores[2] = Color.RED;
+		colores[2] = Color.BLUE;
 		colores[3] = Color.LIGHT_GRAY;
 		colores[4] = new Color(200,180,10);
 		
