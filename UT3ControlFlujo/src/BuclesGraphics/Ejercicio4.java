@@ -11,7 +11,7 @@ public class Ejercicio4 {
 		Color[] colores;
 		int centro_x, centro_y;
 		int distancia;
-		int anterior; //ESte   -1 es solo para que iniciarlizarlo a un número que no pueda ser y que no de error
+		int anterior; //Este -1 es solo para que iniciarlizarlo a un número que no pueda ser y que no de error
 		
 		//Otra opción para declarar los colores en el array sería así:
 		//Color[] colores = {new Color(255,0,0),  Color.CYAN, Color.RED, Color.LIGHT_GRAY, new Color(200,180,10) };
@@ -19,7 +19,7 @@ public class Ejercicio4 {
 		colores = new Color[5];
 		
 		colores[0] = new Color(255,0,0);
-		colores[1] = Color.CYAN;
+		colores[1] = Color.MAGENTA;
 		colores[2] = Color.RED;
 		colores[3] = Color.LIGHT_GRAY;
 		colores[4] = new Color(200,180,10);
