@@ -12,7 +12,7 @@ public class Ejercicio1V2 {
 		int ancho,alto,centro_x,centro_y,radio_disco;
 		
 		
-		//Inicializamos los valores de dibujo del semaforo
+		//Inicializamos los valores de dibujo del semáforo
 		ancho=150;
 		alto=300;
 		centro_x=300;
