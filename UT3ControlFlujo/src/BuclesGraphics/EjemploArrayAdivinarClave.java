@@ -22,7 +22,6 @@ public class EjemploArrayAdivinarClave {
 				System.out.println("Muy bien.");
 			};
 				
-			
 	}
 
 }
