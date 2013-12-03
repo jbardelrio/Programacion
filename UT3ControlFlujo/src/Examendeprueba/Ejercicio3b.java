@@ -2,7 +2,8 @@ package Examendeprueba;
 
 import java.util.Scanner;
 
-public class Ejercicio3a {
+
+public class Ejercicio3b {
 
 	public static void main(String[] args) {
 		String[] versos;
@@ -14,7 +15,7 @@ public class Ejercicio3a {
 		versos=new String[40];
 		num_versos = 0;
 		
-		System.out.println("\nBienvenido a Haiku Generator.\n");
+		System.out.println("\nBienbenido a Haiku Generator.\n");
 		System.out.println("Comenzaremos recopilando versos (escribe * para terminar)");
 		
 		while (continuar && num_versos<40) {
@@ -30,14 +31,22 @@ public class Ejercicio3a {
 		System.out.printf("Versos leidos (%d):\n",num_versos);
 		for(int i=0;i<num_versos;i++)
 			System.out.println(versos[i]);
-
+		
 		boolean otro=false;
 		do {
 			System.out.println("\nHaiku");
 			for(int k=0;k<10;k++) System.out.print("*");
-			System.out.println("");
-			for(int i=0;i<3;i++)
-				System.out.println(versos[(int)(Math.random()*num_versos)]);
+			System.out.println();
+			
+			int[] usados={-1,-1,-1};
+			int nuevo_verso;
+			for(int i=0;i<3;i++) {
+				do {
+					nuevo_verso=(int)(Math.random()*num_versos);
+				} while (usados[0]==nuevo_verso || usados[1]==nuevo_verso || usados[2]==nuevo_verso);
+				System.out.println(versos[nuevo_verso]);
+				usados[i]=nuevo_verso;
+			}
 			
 			System.out.print("¿Otro Haiku? [S/n] ");
 			String resp;
@@ -52,5 +61,4 @@ public class Ejercicio3a {
 		System.out.println("Adios, gracis por utilizar Haiku Generator.");
 	}
 }
-
 
