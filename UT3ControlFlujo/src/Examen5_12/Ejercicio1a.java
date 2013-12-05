@@ -15,6 +15,7 @@ public class Ejercicio1a {
 	    	{
 	    		System.out.print("@");
 	    	}
+	    	
 	    	System.out.println();
 	    }
 
