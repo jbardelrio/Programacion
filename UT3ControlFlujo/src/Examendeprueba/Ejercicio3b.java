@@ -15,7 +15,7 @@ public class Ejercicio3b {
 		versos=new String[40];
 		num_versos = 0;
 		
-		System.out.println("\nBienbenido a Haiku Generator.\n");
+		System.out.println("\nBienvenido a Haiku Generator.\n");
 		System.out.println("Comenzaremos recopilando versos (escribe * para terminar)");
 		
 		while (continuar && num_versos<40) {
@@ -58,7 +58,7 @@ public class Ejercicio3b {
 			
 		} while(otro);
 		
-		System.out.println("Adios, gracis por utilizar Haiku Generator.");
+		System.out.println("Adios, gracias por utilizar Haiku Generator.");
 	}
 }
 

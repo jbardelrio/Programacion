@@ -49,7 +49,7 @@ public class Ejercicio3a {
 			
 		} while(otro);
 		
-		System.out.println("Adios, gracis por utilizar Haiku Generator.");
+		System.out.println("Adios, gracias por utilizar Haiku Generator.");
 	}
 }
 
