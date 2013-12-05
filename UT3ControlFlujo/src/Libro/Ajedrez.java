@@ -25,6 +25,7 @@ public static void main(String[] args)
      else if ((fila + columna) % 2 == 0)
        System.out.print("B ");
      else
+
        System.out.print("N ");
    }
    System.out.println(); // cambiar de fila
