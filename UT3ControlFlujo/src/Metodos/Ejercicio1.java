@@ -10,8 +10,8 @@ public class Ejercicio1 {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Dime los euros: ");
 		double numero = teclado.nextDouble();
+		System.out.print("Son " + cambio(numero) + " $");
 		
-		cambio(numero);
 
 	}
 	public static double cambio(double numero){
@@ -19,7 +19,7 @@ public class Ejercicio1 {
 		double dolar = 1.38;
 	
 		double cambio = numero * dolar;
-		System.out.print("Son " + cambio + " $");
+	
 		return (double) cambio;
 		
 	}
