@@ -23,7 +23,7 @@ public class Ejemplo2 {
 		circulo.setColor(Color.BLUE);
 		circulo.fill();
 		
-		// Canvas.pause(); //Sir para hacer una pausa hasta que pulsemos el ok que sale en la nueva ventana
+		// Canvas.pause(); //Sirve para hacer una pausa hasta que pulsemos el ok que sale en la nueva ventana
 		
 		/*Canvas c;
 		c = Canvas.getInstance();
