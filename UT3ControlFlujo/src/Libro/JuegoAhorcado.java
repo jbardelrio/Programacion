@@ -1,6 +1,5 @@
 package Libro;
 
-import java.awt.Font;
 import java.util.Scanner;
 
 import graphics2.*;
@@ -22,11 +21,17 @@ public class JuegoAhorcado {
 			{
 				adivinada.append(" ");
 			}
+			Text longitud;
+			longitud = new Text (30, 10, "LA PALABRA TIENE " + palabra.length()+ " LETRAS");
+			longitud.grow(20, 20);
+			longitud.setColor(Color.BLACK);
+			longitud.draw();
+			
 			for(int i=0;i<palabra.length();i++) 
 			{
 				Text lineas;
 				lineas = new Text (tx, 30, "-");
-				lineas.grow(20, 30);
+				lineas.grow(20, 20);
 				lineas.setColor(Color.RED);
 				lineas.draw();
 				tx = tx + 40;
@@ -47,9 +52,10 @@ public class JuegoAhorcado {
 				{
 					if(palabra.charAt(i)==letra)
 					{
+					
 						adivinada.setCharAt(i, letra);
 						Text adivin;
-						adivin = new Text (50, 50,  ""+ adivinada + "" );
+						adivin = new Text (30, 50,  ""+ adivinada + "" );
 						adivin.grow(30, 30);
 						adivin.draw();
 						Canvas.pause();
