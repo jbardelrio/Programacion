@@ -31,8 +31,7 @@ public class Deitel6_24 {
 			 
 			 }  
 		 
-		 }     
-	 
+		 }      
 	 }           
 	   
 	 public static void Imprime( int perfecto ){            
