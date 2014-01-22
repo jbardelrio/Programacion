@@ -1,4 +1,6 @@
+package Ejemplos;
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 
@@ -12,14 +14,21 @@ public class Ejemplo1 {
 			dividendo = teclado.nextInt();
 			divisor = teclado.nextInt();
 		}
-		catch (InputMismatchException e){
+		//Se pueden poner dos o más excepcioens a la vez separadas por "|"
+		catch (InputMismatchException | IllegalStateException  e){
 			//El "ERR" es lo mismo que System.out.println pero para errores solamente, lo imprime en rojo. 
 			//Puedes usar el que quieras.
 			System.err.println("Error, no es número entero.");
-			//Esto hace que se salga del programa. Con el cero no ves el error, si pusieramos "-1" veríamos el error
+			//Esto hace que se salga del programa. Con el cero es el código del error, si pusieramos "-1" veríamos
+			//otro código
 			System.exit(0);
 			
-			}
+		}
+		catch(NoSuchElementException e){
+			System.out.println("Error, no se puede leer el teclado.");
+			System.exit(0);
+			
+		}
 		try{
 			System.out.println("Resultado: " + (dividendo/divisor));
 		}
@@ -35,6 +44,7 @@ public class Ejemplo1 {
 			//hemos dividido por cero.
 			System.out.println(error.getMessage());
 		}
+		//EXCEPTION vale para todas las excepciones a la vez
 		catch (Exception e){
 			System.out.println("Error inesperado.");
 			//Esto hace que nos imprima el mensaje de error
