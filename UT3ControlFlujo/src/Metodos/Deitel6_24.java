@@ -42,9 +42,7 @@ public class Deitel6_24 {
 		if (perfecto%divisores == 0)
 		System.out.printf("\t%3d", divisores);
 	 }
-	 
 	 System.out.println("\n");
-
 	 }              
 	 
 }     
