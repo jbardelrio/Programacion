@@ -36,11 +36,12 @@ public class Deitel6_24 {
 	 }           
 	   
 	 public static void Imprime( int perfecto ){            
-	 System.out.printf("%d = ", perfecto);
+		 
+	 System.out.print("El " + perfecto + " es perfecto porque es la suma de: ");
 	  
 	 for ( int factores = 1; factores <= perfecto/2; factores++ ){   
-		 if ( 0 == perfecto%factores )
-		 System.out.printf("\t%3d", factores);
+		if (perfecto%factores == 0)
+		System.out.printf("\t%3d", factores);
 	 }
 	 
 	 System.out.println("\n");
