@@ -16,17 +16,17 @@ public class Deitel6_24 {
 		
 	}
 	public static void Perfecto( int numero ){           
-		 int sumafactores = 0; 
+		 int sumadivisores = 0; 
 		 
 		 for ( int j = 1; j <= numero; j++ ){       
-			 sumafactores = 0;
+			 sumadivisores = 0;
 	 
 			 for ( int i = 1; i <= j/2 ; i++ ) 
 			 
 			 if( 0 == j % i )
-				 sumafactores += i; 
+				 sumadivisores += i; 
 		 
-			 if ( sumafactores == j ){      
+			 if ( sumadivisores == j ){      
 			 Imprime(j);
 			 
 			 }  
@@ -36,11 +36,11 @@ public class Deitel6_24 {
 	   
 	 public static void Imprime( int perfecto ){            
 		 
-	 System.out.print("El " + perfecto + " es perfecto porque es la suma de: ");
+	 System.out.print("El " + perfecto + " es perfecto porque es la suma de sus divisores: ");
 	  
-	 for ( int factores = 1; factores <= perfecto/2; factores++ ){   
-		if (perfecto%factores == 0)
-		System.out.printf("\t%3d", factores);
+	 for ( int divisores = 1; divisores <= perfecto/2; divisores++ ){   
+		if (perfecto%divisores == 0)
+		System.out.printf("\t%3d", divisores);
 	 }
 	 
 	 System.out.println("\n");
