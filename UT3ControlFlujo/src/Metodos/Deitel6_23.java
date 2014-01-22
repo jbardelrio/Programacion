@@ -6,7 +6,6 @@ public class Deitel6_23{
 
 public static void main(String args[]){        
 
-	@SuppressWarnings("resource")
 	Scanner entrada = new Scanner(System.in);
 	 double a;
 	 double b;
@@ -16,7 +15,9 @@ public static void main(String args[]){
 	 a = entrada.nextDouble();
 	 b = entrada.nextDouble();
 	 c = entrada.nextDouble();
-	 System.out.printf("\nEl menor de los numeros es: %.2f\n", Deitel6_23.Minimo(a, b, c)); 
+	 entrada.close();
+	 
+	 System.out.printf("\nEl menor es: %.2f\n", Deitel6_23.Minimo(a, b, c)); 
 
  } 
  
