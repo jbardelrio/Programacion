@@ -6,7 +6,8 @@ public static void main(String[] args) {
 
 	Temperatura temp = new Temperatura();
 
-	temp.setCelsius(300);
+	temp.setCelsius(36);
+	temp.setFahrenheit(100);
 
 	System.out.println("Temperatura en º Celsius: " + temp.getCelsius());
 	System.out.println("Temperatura en º Fahrenheit: " + temp.getFahrenheit());
