@@ -9,13 +9,14 @@ public class Temperatura {
 
 	private float celsius;
 	private float fahrenheit;
+	private float grados;
 
 	public float getCelsius() {
 		return celsius;
 	}
 
-	public void setCelsius(float celsius) {
-		this.celsius = celsius;
+	public void setCelsius(float grados) {
+		this.grados = grados;
 	}
 
 	public float getFahrenheit() {
