@@ -8,7 +8,7 @@ package EjerciciosIniciales;
 public class Temperatura {
 
 	private float celsius;
-	private float Fahrenheit;
+	private float fahrenheit;
 
 	public float getCelsius() {
 		return celsius;
@@ -19,11 +19,11 @@ public class Temperatura {
 	}
 
 	public float getFahrenheit() {
-		return Fahrenheit;
+		return fahrenheit;
 	}
 
 	public void setFahrenheit(float fahrenheit) {
-		Fahrenheit = fahrenheit;
+		this.fahrenheit = fahrenheit;
 	}
 
 	//°C a °F 	Multiplica por 9, divide entre 5, después suma 32
