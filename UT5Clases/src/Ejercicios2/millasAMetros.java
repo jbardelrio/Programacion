@@ -10,17 +10,14 @@ pero esta vez exprese el resultado en kilómetros.
  */
 public class millasAMetros {
 
-		private static float millas;
 
+		private static final double metrosXmilla=1852;
 		
-		public static float millasTOmetros(float millas) {
-			return (float) (millas * 1852);
+		public static  double millasAMetros(double millas){
+			return millas*metrosXmilla;
 		}
-
-		public static float millasAKilometros(float kilometros) {
-			return (float) (kilometros / 0.62137);
+		
+		public static double millasAKilometros(double millas){
+			return millas*metrosXmilla/1000.0;
 		}
-	
-	
-	
 }
