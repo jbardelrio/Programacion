@@ -52,12 +52,15 @@ public class Racionales {
 	public void sumar(Racionales numerador, Racionales denominador){
 		  this.sumar = (getNumerador() + getDenominador());
 	  }
+	
 	public void restar(){
 		   
 	  }
+	
 	public void multiplicar(){
 		   
 	  }
+	
 	public void dividir(){
 		   
 	  }
