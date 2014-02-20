@@ -8,6 +8,7 @@ public class Real {
 		this.numero = numero;
 	}
 	
+	
 	public void suma(Real otro){
 		this.numero = this.numero + otro.getNumero();
 	}

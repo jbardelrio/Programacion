@@ -64,6 +64,7 @@ public class Racionales {
 	public void dividir(){
 		   
 	  }
+	
 	  
 /*
 Racional numero1;
