@@ -11,6 +11,7 @@ package Ejercicios2;
     Método getTriple. Devuelve el triple del valor interno.
     Método setNumero. Inicializa de nuevo el valor interno.
 
+
  */
 public class Numero {
 	private int numero;

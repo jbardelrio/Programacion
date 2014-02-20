@@ -7,6 +7,10 @@ public class Coches {
 		coche1 = new Coche("fiat","punto");
 		
 		System.out.println(coche1.getMarca() + " " + coche1.getModelo());
+		
+		System.out.println(coche1);
+		
+		if (coche1.equals(coche1));
 
 	}
 

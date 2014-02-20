@@ -23,6 +23,7 @@ public class MiNumero {
 		
 	}
 	
+	
 	public int getNumero() {
 		return numero;
 	}
