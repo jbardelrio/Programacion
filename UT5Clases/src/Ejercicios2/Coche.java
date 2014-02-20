@@ -6,14 +6,57 @@ package Ejercicios2;
  */
 public class Coche {
 
-		private static String marca;
-		private static String modelo;
+		private String marca;
+		private String modelo;
 	
 		public Coche(){
 			this.marca="";
 			this.modelo="";
 		}
 		
+		@Override
+		public String toString() {
+			return "Coche [Marca=" + getMarca() + ", Modelo="
+					+ getModelo() + "]";
+		}
+
+		@Override
+		public int hashCode() {
+			final int prime = 31;
+			int result = 1;
+			result = prime * result + ((marca == null) ? 0 : marca.hashCode());
+			result = prime * result
+					+ ((modelo == null) ? 0 : modelo.hashCode());
+			return result;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			Coche other = (Coche) obj;
+			/*
+			if (this.marca.equals(other.getMarca()) && this.marca.equals(other.getMarca()))
+				return true;
+			*/
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			
+			if (marca == null) {
+				if (other.marca != null)
+					return false;
+			} else if (!marca.equals(other.marca))
+				return false;
+			if (modelo == null) {
+				if (other.modelo != null)
+					return false;
+			} else if (!modelo.equals(other.modelo))
+				return false;
+			return true;
+		}
+
 		public Coche(String marca, String modelo){
 			this.marca=marca;
 			this.modelo=modelo;
