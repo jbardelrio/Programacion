@@ -26,14 +26,15 @@ public class Racionales {
 	private int numerador;
 	private int denominador;
 	private int sumar;
+	private String resultado;
+	float resultadofraccion;
 	//Constructores:
 	public Racionales() {
 	     numerador=1;
 	     denominador=1;
 	  }
-	  public Racionales(int num, int den) {
-	     numerador=num;
-	     denominador=den;
+	  public Racionales(int numerador, int denominador) {
+	   
 	  }
 	//Métodos:
 	public int getNumerador() {
@@ -48,7 +49,7 @@ public class Racionales {
 	public void setDenominador(int denominador) {
 		this.denominador = denominador;
 	}
-	  
+	 
 	public void sumar(Racionales numerador, Racionales denominador){
 		  this.sumar = (getNumerador() + getDenominador());
 	  }
@@ -65,7 +66,21 @@ public class Racionales {
 		   
 	  }
 	
-	  
+	 public String toString(){
+		 return ""+this.resultado;
+	 }
+	 
+	 public float toFloatString(){
+		
+		return resultadofraccion;
+		 
+	 }
+	 
+	 private void simplificar(){
+		 
+	 }
+	 
+	 
 /*
 Racional numero1;
 numero1 = new Racional (7,23);
