@@ -23,39 +23,42 @@ hacer la operación y mostrarla.
  */
 public class Racionales {
 
-	private int numerador;
-	private int denominador;
+	private int num;
+	private int den;
 	private int sumar;
 	private String resultado;
 	float resultadofraccion;
 	//Constructores:
 	public Racionales() {
-	     numerador=1;
-	     denominador=1;
+	     num=1;
+	     den=1;
 	  }
-	  public Racionales(int numerador, int denominador) {
+	  public Racionales(int num, int den) {
 	   
 	  }
 	//Métodos:
-	public int getNumerador() {
-		return numerador;
+	public int getNum() {
+		return num;
 	}
-	public void setNumerador(int numerador) {
-		this.numerador = numerador;
+	public void setNum(int num) {
+		this.num = num;
 	}
-	public int getDenominador() {
-		return denominador;
+	public int getDen() {
+		return den;
 	}
-	public void setDenominador(int denominador) {
-		this.denominador = denominador;
+	public void setDen(int den) {
+		this.den = den;
 	}
 	 
-	public void sumar(Racionales numerador, Racionales denominador){
-		  this.sumar = (getNumerador() + getDenominador());
+	public static Racionales sumar(Racionales a, Racionales b){
+		 Racionales c=new Racionales();
+	     c.num=a.num*b.den+b.num*a.den;
+	     c.den=a.den*b.den;
+	     return c; 
 	  }
 	
 	public void restar(){
-		   
+		  
 	  }
 	
 	public void multiplicar(){
@@ -66,17 +69,17 @@ public class Racionales {
 		   
 	  }
 	
-	 public String toString(){
+	public String toString(){
 		 return ""+this.resultado;
 	 }
 	 
-	 public float toFloatString(){
+	public float toFloatString(){
 		
 		return resultadofraccion;
 		 
 	 }
 	 
-	 private void simplificar(){
+	private void simplificar(){
 		 
 	 }
 	 
