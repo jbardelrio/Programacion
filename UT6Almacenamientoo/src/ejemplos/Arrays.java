@@ -52,6 +52,8 @@ public class Arrays {
 		enteros4 [2][2]=2;
 		enteros4 [1][2]=3; //PRIMERO LA FILA Y LUEGO LA COLUMNA
 		
+		
+		
 	}
 
 }
