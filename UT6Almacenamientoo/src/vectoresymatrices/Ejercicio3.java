@@ -1,4 +1,7 @@
 package vectoresymatrices;
+
+import java.util.Arrays;
+
 /*
  * Ejercicio 3. Queremos guardar en la memoria del ordenador el número de alumnos matriculados (por módulos) 
  * en el ciclo de DAW. 
@@ -14,6 +17,13 @@ package vectoresymatrices;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
+		
+		String [] modulos = {"Sistemas Informáticos", "Base de Datos", "Programación", "Lenguaje de Marcas", 
+							"Entornos de Desarrollo", "Acceso a Datos"};
+		int[] numalumnos = {21, 17, 30, 14, 12, 25};
+			
+		System.out.println(Arrays.toString(modulos));
+		System.out.println(Arrays.toString(numalumnos));
 		
 
 	}
