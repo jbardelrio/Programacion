@@ -1,6 +1,8 @@
 package vectoresymatrices;
 /*
- * Ejercicio 3. Queremos guardar en la memoria del ordenador el número de alumnos matriculados (por módulos) en el ciclo de DAW. Sabemos que los alumnos matriculados por cada módulo son:
+ * Ejercicio 3. Queremos guardar en la memoria del ordenador el número de alumnos matriculados (por módulos) 
+ * en el ciclo de DAW. 
+ * Sabemos que los alumnos matriculados por cada módulo son:
 
 	21 alumnos matriculados en Sistemas Informáticos.
 	17 alumnos matriculados en Base de Datos.
@@ -11,12 +13,8 @@ package vectoresymatrices;
  */
 public class Ejercicio3 {
 
-	public Ejercicio3() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
