@@ -1,4 +1,5 @@
 package vectoresymatrices;
+import java.util.Scanner;
 /*
  * Ejercicio 4. Escribe un método que se encargue de crear y cargar un vector con números decimales 
  * (con datos que se insertan por el teclado). 
@@ -6,12 +7,18 @@ package vectoresymatrices;
  */
 public class Ejercicio4 {
 
-	public Ejercicio4() {
-		// TODO Auto-generated constructor stub
+	public double decimales(double decimal){
+		return decimal;
+		
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		double decimal;
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Dime un número decimal: ");
+		entrada.nextInt();
+		
+		
 
 	}
 
