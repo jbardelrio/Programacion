@@ -1,4 +1,7 @@
 package vectoresymatrices;
+
+import java.util.Scanner;
+
 /*
  * Ejercicio 6. Escribe un programa que obtenga la letra del DNI. 
  * El procedimiento para obtener la letra consiste en dividir el número del DNI por 23. 
@@ -10,13 +13,22 @@ package vectoresymatrices;
  */
 public class Ejercicio6 {
 
-	public Ejercicio6() {
-		// TODO Auto-generated constructor stub
-	}
+	
+	
+	
+	 public static final String letraNIF = "TRWAGMYFPDXBNJZSQVHLCKE";
+	 
+	  public static String letraDNI(int dni) {
+	    return String.valueOf(dni) + letraNIF.charAt(dni % 23);
+	  }
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int dni;
+		System.out.println("Dime las 8 cifras del DNI: ");
+		Scanner teclado = new Scanner (System.in);
+		dni = teclado.nextInt();
+		System.out.println(letraDNI(dni));
+		
 	}
 
 }
