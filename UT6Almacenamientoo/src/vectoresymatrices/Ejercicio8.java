@@ -16,7 +16,7 @@ public class Ejercicio8 {
 		
 		System.out.println("Introduce los caracteres: ");
 		for (int i=0; i<cadena.length; i++){
-			cadena = teclado.toChar();
+			cadena [i]= teclado.toChar();
 		}
 		
 		System.out.println("Números: " + Arrays.toString(cadena));
