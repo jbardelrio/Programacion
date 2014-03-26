@@ -27,7 +27,7 @@ public class Ejercicio6 {
 		System.out.println("Dime las 8 cifras del DNI: ");
 		Scanner teclado = new Scanner (System.in);
 		dni = teclado.nextInt();
-		System.out.println(letraDNI(dni));
+		System.out.println("El NIF es: " + letraDNI(dni));
 		
 	}
 
