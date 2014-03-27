@@ -7,31 +7,26 @@ import java.util.Scanner;
  * Ejercicio 8. Escribe un método que reciba una matriz de caracteres con el fin de visualizar su contenido.
  */
 public class Ejercicio8 {
-
+	
 	public static void caracteres(char [][] matriz) {
 		
-		/*Scanner teclado = new Scanner(System.in);
- 
-        char[] cadena = new char[5];
-		
-		
-		System.out.println("Introduce los caracteres: ");
-		for (int i=0; i<cadena.length; i++){
-			cadena [i]= teclado.next().charAt(0);
-		}
-		
-		teclado.close();
-		
-		System.out.println("Números: " + Arrays.toString(cadena));
-		*/
-		
-		
+		for (int i = 0; i < matriz.length; i++) { 
+			for (int j = 0; j < matriz[i].length; j++) { 
+				System.out.print(matriz[i][j]+ " ");
+			}
+			System.out.println();
+		}	
 		 
 	}
-
+	public void setArray(char [][] matriz) 
+	{ 
+	this.array = array; 
+	} 
 	public static void main(String[] args) {
 		
-		//System.out.println(caracteres());
+		char [][] matriz= {{'*','*','#'},{'/','&','%'}};
+		
+	
 		
 	}
 

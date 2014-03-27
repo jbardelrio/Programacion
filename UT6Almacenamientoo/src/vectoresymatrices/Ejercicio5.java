@@ -6,56 +6,38 @@ import java.util.*;
  */
 public class Ejercicio5 {
 
-	public static int[] vectorMayorAMenor(int[] array) {
-		int aux;
-		
-		for (int i = 0; i < array.length - 1; i++) {
-			for (int j = i + 1; j < array.length; j++) {
-				if (array[i] < array[j]) {
-					aux = array[i];
-					array[i] = array[j];
-					array[j] = aux;
-				}
-				if(array[i] == array[j]){
-					array[j] = 0;
-				}
-			}
-		}
-		
-		return array;
-}
+	/*
+	 * Ejercicio 5. Escribe un programa que pida 8 notas. El programa debe
+	 * visualizar cuÃ¡l es la nota mÃ¡s alta, luego la siguiente, y asÃ­
+	 * sucesivamente. Si hay alguna nota repetida, se visualizarÃ¡ solo una vez.
+	 */
 
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner (System.in);
-		
-		int totalNotas = 8;
-		int finalNotas = totalNotas;
-		
-		int guardarNotas[] = new int[totalNotas];
-		
-		System.out.println("Dime las notas: ");
-		
-		for (int i=0; i<totalNotas; i++){
-			guardarNotas[i]= teclado.nextInt();
+		Scanner teclado = new Scanner(System.in);
+
+		int tamañoInicial = 8;
+		int tamañoFinal = tamañoInicial;
+		int vector[] = new int[tamañoInicial];
+
+		System.out.println("Inserte las notas que desea ordenar (desc).");
+		for (int i = 0; i < tamañoInicial; i++) {
+			vector[i] = teclado.nextInt();
 		}
-		
-		vectorMayorAMenor(guardarNotas);
-		
-		for (int i=0; i<totalNotas; i++){
-			if (guardarNotas[i]==0){
-				finalNotas--;
-			}
-		}
-		
-		int notasOrdenadas[] = new int [finalNotas];
-		
-		for (int i=0; i<finalNotas; i++){
-			notasOrdenadas[i]=guardarNotas[i];
-		}
-		
-		System.out.println("Las notas ordenadas: " + Arrays.toString(notasOrdenadas));
+
+		teclado.close();
 
 
-}
+		int ordenado[]=Arrays.copyOf(vector,vector.length);
+		Arrays.sort(ordenado);
+		
+		int anterior=ordenado[ordenado.length-1];
+		System.out.print(ordenado[ordenado.length-1]+" ");
+		for(int i=ordenado.length-2;i>=0;i--) {
+			if (anterior!=ordenado[i]) { 
+				System.out.print(ordenado[i]+ " ");
+				anterior=ordenado[i];
+			}			
+		}
+	}
 
 }

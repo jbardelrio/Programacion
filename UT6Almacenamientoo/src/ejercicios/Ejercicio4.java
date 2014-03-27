@@ -1,4 +1,8 @@
 package ejercicios;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 /*
  * Ejerciccio 4 Realiza un programa que pida al usuario la introducción de un carácter hasta que este 
  * pulse el carácter @. 
@@ -20,8 +24,29 @@ Utiliza arrays para hacer el ejercicio.
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int[] contador;
+		Scanner teclado = new Scanner(System.in);
+		
+		contador=new int[256];
+		
+		Arrays.fill(contador, 0);
+				
+		char c;
+		do {
+			System.out.print("Teclea un caracter: ");
+			c=teclado.next().charAt(0);
+			contador[c]++;
+		}while(c!='@');
+		
+		System.out.println("Frecuencias de cada caracter: ");
+		
+		for(int i=0;i<contador.length;i++) {
+			if (contador[i]>0)
+				System.out.printf("\t%s : %d\n",Character.toString((char)i),contador[i]);
+		}
+		
+		
+		
 	}
 
 }
