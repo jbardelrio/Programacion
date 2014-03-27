@@ -43,11 +43,11 @@ Así por ejemplo, si se dice que use el '+', posicón 1,1 y tamaño 3.
 public class Ejercicio10 {
 
 	public Ejercicio10() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 

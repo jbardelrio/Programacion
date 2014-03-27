@@ -8,26 +8,31 @@ import java.util.Scanner;
  */
 public class Ejercicio8 {
 
-	public static Object caracteres() {
+	public static void caracteres(char [][] matriz) {
 		
-		Scanner teclado = new Scanner(System.in);
+		/*Scanner teclado = new Scanner(System.in);
  
-        char[] cadena = new char[8];
+        char[] cadena = new char[5];
+		
 		
 		System.out.println("Introduce los caracteres: ");
 		for (int i=0; i<cadena.length; i++){
-			cadena [i]= teclado.toChar();
+			cadena [i]= teclado.next().charAt(0);
 		}
 		
+		teclado.close();
+		
 		System.out.println("Números: " + Arrays.toString(cadena));
-		return cadena;	
+		*/
+		
+		
 		 
 	}
 
 	public static void main(String[] args) {
 		
-		System.out.println(caracteres());
-
+		//System.out.println(caracteres());
+		
 	}
 
 }
