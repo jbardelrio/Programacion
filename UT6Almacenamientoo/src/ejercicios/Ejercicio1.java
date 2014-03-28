@@ -12,11 +12,11 @@ public class Ejercicio1 {
 	
 	
 	/**
-	 * Comprueba si un elemento estÃ¡ en un array
+	 * Comprueba si un elemento está en un array
 	 *   
 	 * @param i Elemento buscado
 	 * @param array Vector donde buscar
-	 * @param size NÃºmero de elementos donde buscar
+	 * @param size Número de elementos donde buscar
 	 * @return true si se ha encontrado i
 	 * 
 	 */
@@ -38,7 +38,7 @@ public class Ejercicio1 {
 			}
 		}
 		
-		System.out.println("Resultado:" + Arrays.toString(numbers));
+		System.out.println("Números lotería primitiva:" + Arrays.toString(numbers));
 	}
 
 }
