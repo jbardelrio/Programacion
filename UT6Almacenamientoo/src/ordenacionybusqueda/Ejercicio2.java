@@ -21,23 +21,24 @@ public class Ejercicio2 {
 	            System.out.print("Dime cuantos alumnos: ");
 	            N = teclado.nextInt();
 	        }while(N<=0);
-	        //Se crea el array de tamaño N y el auxiliar
+	        
+	        //Creamos el array de tamaño N que hemos pedido antes
 	        int[] alturas = new int[N];
-	      
+	        	        
 	        //Leer alturas
 	        System.out.println("Dime la altura de los alumnos: ");
 	        for (i = 0; i < N; i++) {
 	            System.out.print("Alumno " + (i+1) + " = ");
 	            alturas[i] = teclado.nextInt();
-	         
 	        }
+	        
+	        teclado.close(); 
+	        
 	        System.out.println("Según las has introducido: " + Arrays.toString(alturas));
-	    
-		teclado.close();
-
-		int[] ordenado=Arrays.copyOf(alturas,alturas.length);
-		Arrays.sort(ordenado);
-		
-		System.out.println("Ordenadas de menor a mayor: " + Arrays.toString(ordenado));
+	        
+	        int[] ordenado=Arrays.copyOf(alturas,alturas.length);
+	        Arrays.sort(ordenado);
+	        
+	        System.out.println("Ordenadas de menor a mayor: " + Arrays.toString(ordenado));
 	 }
 }

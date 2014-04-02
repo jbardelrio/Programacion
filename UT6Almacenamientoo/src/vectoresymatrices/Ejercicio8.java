@@ -8,25 +8,22 @@ import java.util.Scanner;
  */
 public class Ejercicio8 {
 	
-	public static void caracteres(char [][] matriz) {
-		
-		for (int i = 0; i < matriz.length; i++) { 
-			for (int j = 0; j < matriz[i].length; j++) { 
-				System.out.print(matriz[i][j]+ " ");
+	public static void mostrar(char [][]  matriz){
+	
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				System.out.print(matriz[i][j] + " ");
 			}
 			System.out.println();
-		}	
-		 
+		}
 	}
-	public void setArray(char [][] matriz) 
-	{ 
-	this.array = array; 
-	} 
+	
+
 	public static void main(String[] args) {
 		
-		char [][] matriz= {{'*','*','#'},{'/','&','%'}};
+		char [][] caracteres= {{'a','f','f'},{'b','d','h','v'},{'h','g','h'}};
 		
-	
+		mostrar(caracteres);
 		
 	}
 
