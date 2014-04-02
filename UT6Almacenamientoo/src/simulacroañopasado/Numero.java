@@ -1,4 +1,8 @@
 package simulacroañopasado;
+
+import vectoresymatrices.Menu;
+import vectoresymatrices.Pantalla;
+
 /*
  * 4. (3 pts) Crea la clase Numero que permite llevar la cuenta de los números dados en la cola de la charcutería. 
  * La clase almacenará el número que se está atendiendo (sale en el marcador) y el último número que se ha dado 
@@ -40,10 +44,42 @@ _____________________
 4
 _____________________
  */
+
+
 public class Numero {
 
 	public static void main(String[] args) {
+		Menu menuPrincipal;
+		String[] opciones={"(1)Coger Numero",
+					"(2)Atender",
+					"(3)Ver cola",
+					"(4)Salir",
+					};
+		Pantalla miPantalla= new Pantalla();
 		
+		menuPrincipal=new Menu(opciones,4);
+		
+		int respuesta;
+		do {
+			respuesta=menuPrincipal.imprimirYPreguntar();
+			switch(respuesta){
+			case 1:
+				
+				break;
+			case 2:
+				
+						
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+		
+			}
+			
+		} while (respuesta!=4);
 
 	}
 
