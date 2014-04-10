@@ -9,7 +9,7 @@ import java.util.Arrays;
  * - Un constructor, al que le pasamos un valor y crea un ArrayOrdenado de ese tamaño.
  * - getElemento(int x) devuelve el valor del elemento en la posición x.
  * - setElemento(int x, int elto) cambia el elemento en la posición x por el elemento elto.
- * Obviamente, como es un array ordenador, si el número tiene otro orden se colocará automaticamente 
+ * Obviamente, como es un array ordenado, si el número tiene otro orden se colocará automaticamente 
  * en otra posición.
  * - toString()
  */
