@@ -28,7 +28,7 @@ public class Ejemplo2 {
 			}else{
 				System.out.println("No comienza ni termina por " + subcadenas[i]);
 			}
-			System.out.println();
+		
 		}
 		
 	}
