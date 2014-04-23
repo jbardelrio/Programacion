@@ -4,8 +4,6 @@ import java.util.Scanner;
 // dejará que el usuario inserte cinco subcadenas con el fin de informar
 // si la primera cadena empieza o termina por cada una de las cinco subcadenas
 public class Ejemplo2 {
-
-	
 	
 	public static void main(String[] args) {
 		
@@ -20,6 +18,7 @@ public class Ejemplo2 {
 			System.out.println("Dime una subcadena: ");
 			subcadenas[i]=teclado.nextLine();
 		}
+		
 		for (int i = 0; i < subcadenas.length; i++) {
 			if (cadena.startsWith(subcadenas[i])) {
 				System.out.println("Comienza por " + subcadenas[i]);
@@ -28,7 +27,6 @@ public class Ejemplo2 {
 			}else{
 				System.out.println("No comienza ni termina por " + subcadenas[i]);
 			}
-		
 		}
 		
 	}
