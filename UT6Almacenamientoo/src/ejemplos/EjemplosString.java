@@ -38,6 +38,7 @@ public class EjemplosString {
 		System.out.println(cadena.substring(12, 16));//Coge la CADENA y crea una nueva cadena con ese trozo(caracteres 12 a 16)
 		System.out.println(cadena.substring(12, cadena.length()));
 		
+		//Character.isUpperCase();  //Sacar un CARACTER para ver si es un número, mayúsculas, minúsculas, etc
 		
 	}
 
