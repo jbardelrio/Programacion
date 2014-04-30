@@ -5,12 +5,8 @@ package cadenas;
  */
 public class Ejercicio6 {
 
-	public Ejercicio6() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
