@@ -18,13 +18,13 @@
 			    System.out.print("Introduce la frase a traducir con el PigLatin:");
 			    String frase = input.nextLine();
 		
-			    Scanner word = new Scanner(frase);//Nos sirve para leer cada palabra de la frase por separado
+			    Scanner cadapalabra = new Scanner(frase);//Nos sirve para leer cada palabra de la frase por separado
 			    
 			    sonEspacios(frase); //Compruebo en el método sonEspacios si es una cadena vacía (Hay que darle, al menos, un espacio en blanco para esto)
 			   
-			    while (word.hasNext()) { //Leemos cada una de las palabras y las pasamos al método "convertirPalabra" para traducirlas
-				   String pigLatin = word.next();
-				   System.out.print(convertirPalabra(pigLatin));
+			    while (cadapalabra.hasNext()) { //El método hasNext() retorna true si  contiene más elementos.
+				   String pigLatin = cadapalabra.next();//El método next retorna el siguiente elemento
+				   System.out.print(convertirPalabra(pigLatin));//Pasamos cada elemento al método convertirPalabra() y los imprimimos
 			    }
 		    }catch(java.lang.StringIndexOutOfBoundsException e){//Maneja la excepción java.lang.StringIndexOutOfBoundsException
 			    System.out.println();
