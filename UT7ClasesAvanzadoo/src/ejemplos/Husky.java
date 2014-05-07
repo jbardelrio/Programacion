@@ -13,5 +13,4 @@ public class Husky extends Perro{
 		super.ladrar();//El SUPER hace referencia al método de la clase superior del que hereda, en este caso de la clase PERRO
 		System.out.println("Auuuu!!");
 	}
-	
 }

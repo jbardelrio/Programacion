@@ -19,7 +19,5 @@ public class PruebaPublicacion {
 		System.out.println(r1);
 		System.out.println(l1);
 
-	}
-
-	
+	}	
 }

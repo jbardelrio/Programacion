@@ -17,5 +17,4 @@ public class Revista extends Publicacion {
 	public String toString() {
 		return "Revista [numero=" + numero + "]";
 	}
-
 }

@@ -14,5 +14,4 @@ public class Animal extends Object {//Este EXTENDS OBJECT no hace falta ponerlo,
 		System.out.println("Ñam, ñam");
 	}
 	
-	
 }

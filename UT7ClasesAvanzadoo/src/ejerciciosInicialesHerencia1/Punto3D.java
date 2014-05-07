@@ -19,7 +19,6 @@ public class Punto3D extends Punto {
 		p2.y=4;
 		p2.z=7;
 		
-
 	}
 
 }

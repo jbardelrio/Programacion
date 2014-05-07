@@ -15,5 +15,4 @@ public class PruebaAnimales {
 		cañete.ladrar();//Este método ahora tira del constructor de la clase HUSKY en vez del de la clase PERRO porque le hemos sobreescrito con un override
 		cañete.cerrarVentana();
 	}
-
 }

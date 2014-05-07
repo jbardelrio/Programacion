@@ -43,5 +43,4 @@ public class Publicacion {
 		return "Publicacion [editor=" + editor + ", fecha=" + fecha + "]";
 	}
 
-	
 }

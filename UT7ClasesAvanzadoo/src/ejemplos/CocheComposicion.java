@@ -7,9 +7,4 @@ public class CocheComposicion {
 	String[] conductores;
 	//Conductores[] conductores;
 	
-	public static void main(String[] args) {
-		
-
-	}
-
 }

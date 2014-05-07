@@ -22,6 +22,4 @@ public class Libro extends Publicacion {
 		return "Libro [autor=" + autor + ", ISBN=" + ISBN + "]";
 	}
 	
-	
-	
 }

@@ -22,7 +22,5 @@ public class PuntoP {
 	public String toString() {
 		return "PuntoP [x=" + x + ", y=" + y + "]";
 	}
-	
-	
 
 }

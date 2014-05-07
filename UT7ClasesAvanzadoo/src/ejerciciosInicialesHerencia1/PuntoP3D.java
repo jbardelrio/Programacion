@@ -43,7 +43,5 @@ public class PuntoP3D extends PuntoP {
 		return "PuntoP3D [z=" + z + ", x=" + getX() + ", y=" + getY() 
 				+ "]";
 	}
-	
-	
 
 }
