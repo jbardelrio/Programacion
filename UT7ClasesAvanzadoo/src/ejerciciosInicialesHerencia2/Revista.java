@@ -3,8 +3,7 @@ package ejerciciosInicialesHerencia2;
 public class Revista extends Publicacion {
 
 	private int numero;
-	
-	
+		
 	public int getNumero() {
 		return numero;
 	}
