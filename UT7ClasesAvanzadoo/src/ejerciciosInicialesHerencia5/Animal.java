@@ -16,14 +16,48 @@ package ejerciciosInicialesHerencia5;
  */
 
 public class Animal {
+	
+	private double peso;
+	private String fechanacimiento;
+	private String nombrecliente;
+	private String direccion;
+	
+	
 
-	public Animal() {
-		// TODO Auto-generated constructor stub
+	public double getPeso() {
+		return peso;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
 
+	public String getFechanacimiento() {
+		return fechanacimiento;
+	}
+
+	public void setFechanacimiento(String fechanacimiento) {
+		this.fechanacimiento = fechanacimiento;
+	}
+
+	public String getNombrecliente() {
+		return nombrecliente;
+	}
+
+	public void setNombrecliente(String nombrecliente) {
+		this.nombrecliente = nombrecliente;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public Animal() {
+		
 	}
 
 }

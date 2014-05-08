@@ -31,11 +31,11 @@ public class Rectangulo extends Cuadrado {
 	}
 
 	public int getAncho() {
-		return ancho;
+		return this.ancho;
 	}
 
 	public void setAncho(int ancho) {
-		this.ancho = ancho;
+		this.ancho = super.getAncho();
 	}
 
 	public static int perimetroRectangulo(){
@@ -71,10 +71,10 @@ public class Rectangulo extends Cuadrado {
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
-		Rectangulo r1 = new Rectangulo(ancho, ancho);
+		Rectangulo r1 = new Rectangulo(ancho, largo);
 
-		System.out.println("\nPor favor introduzca el ancho: ");
-		ancho = entrada.nextInt();
+		//System.out.println("\nPor favor introduzca el ancho: ");
+		//ancho = entrada.nextInt();
 		System.out.println("\nPor favor introduzca el largo: ");
 		largo = entrada.nextInt();
 
