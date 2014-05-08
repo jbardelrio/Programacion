@@ -12,7 +12,6 @@ public class EmpleadoPorHoras extends Empleados {
 	public static void main(String[] args) {
 		Empleados e1 = new Empleados();
 		System.out.println(Empleados.calculaSalarioSemanal(11, 2));
-
 	}
 
 }

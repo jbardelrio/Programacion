@@ -35,8 +35,7 @@ public class Empleados extends Object{
 
 	public static double calculaSalarioSemanal(int precioHoras, int horasTrabajadas){
 		double salario;
-		return salario = precioHoras * horasTrabajadas;
-		
+		return salario = precioHoras * horasTrabajadas;	
 	}
 
 }

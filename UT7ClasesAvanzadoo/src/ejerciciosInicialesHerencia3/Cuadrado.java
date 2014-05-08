@@ -102,13 +102,13 @@ public class Cuadrado {
 	
 	public static void main( String args[]){  
 		
-	Scanner entrada = new Scanner(System.in);
-	Cuadrado c1 = new Cuadrado();
-
-	System.out.println("\nPor favor introduzca un entero: ");
-	ancho = entrada.nextInt();
-
-	c1.dibujarCuadrado(ancho);
-	  
+		Scanner entrada = new Scanner(System.in);
+		Cuadrado c1 = new Cuadrado();
+	
+		System.out.println("\nPor favor introduzca un entero: ");
+		ancho = entrada.nextInt();
+	
+		c1.dibujarCuadrado(ancho);
+		  
 	}
 }
