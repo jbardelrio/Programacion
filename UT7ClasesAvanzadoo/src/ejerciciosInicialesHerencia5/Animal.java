@@ -60,4 +60,13 @@ public class Animal {
 		
 	}
 
+	@Override
+	public String toString() {
+		return "Animal [peso=" + peso + ", fechanacimiento=" + fechanacimiento
+				+ ", nombrecliente=" + nombrecliente + ", direccion="
+				+ direccion + "]";
+	}
+	
+	
+
 }
