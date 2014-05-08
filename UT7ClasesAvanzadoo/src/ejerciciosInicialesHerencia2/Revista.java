@@ -14,6 +14,6 @@ public class Revista extends Publicacion {
 
 	@Override
 	public String toString() {
-		return "Revista [numero=" + numero + "]";
+		return super.toString() + " " + this.numero;
 	}
 }

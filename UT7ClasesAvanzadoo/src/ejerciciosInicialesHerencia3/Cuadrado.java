@@ -88,16 +88,12 @@ public class Cuadrado {
 		
 	}
 	
-	public void dibujarCuadrado( int ancho)
-
-	{          
-	 
-	for ( int i = 1; i <= ancho; i++ )
-	{   
-	for ( int j = 1; j <= ancho; j++ )
-	System.out.print("* ");
-	 System.out.println();
-	}
+	public void dibujarCuadrado( int ancho){          	 
+		for ( int i = 1; i <= ancho; i++ ){   
+			for ( int j = 1; j <= ancho; j++ )
+			System.out.print("* ");
+			System.out.println();
+		}
 	} 
 	
 	public static void main( String args[]){  
@@ -105,7 +101,7 @@ public class Cuadrado {
 		Scanner entrada = new Scanner(System.in);
 		Cuadrado c1 = new Cuadrado();
 	
-		System.out.println("\nPor favor introduzca un entero: ");
+		System.out.println("\nPor favor introduzca en ancho: ");
 		ancho = entrada.nextInt();
 	
 		c1.dibujarCuadrado(ancho);

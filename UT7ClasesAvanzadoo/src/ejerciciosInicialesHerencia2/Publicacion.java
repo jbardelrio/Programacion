@@ -40,7 +40,7 @@ public class Publicacion {
 
 	@Override
 	public String toString() {
-		return "Publicacion [editor=" + editor + ", fecha=" + fecha + "]";
+		return this.editor + " " + this.fecha;
 	}
 
 }

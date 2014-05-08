@@ -19,7 +19,7 @@ public class Libro extends Publicacion {
 	}
 	@Override
 	public String toString() {
-		return "Libro [autor=" + autor + ", ISBN=" + ISBN + "]";
+		return super.toString() + " " + this.autor + " " + this.ISBN;
 	}
 	
 }
