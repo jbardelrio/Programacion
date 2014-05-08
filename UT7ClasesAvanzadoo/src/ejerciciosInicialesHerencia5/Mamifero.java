@@ -5,7 +5,7 @@ public class Mamifero extends Animal {
 	private String nombreraza;
 	
 	public Mamifero(double peso, String fechanacimiento, String nombrecliente, String direccion) {
-		// TODO Auto-generated constructor stub
+	
 	}
 
 	public static void main(String[] args) {
