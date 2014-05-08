@@ -22,8 +22,6 @@ public class Animal {
 	private String nombrecliente;
 	private String direccion;
 	
-	
-
 	public double getPeso() {
 		return peso;
 	}

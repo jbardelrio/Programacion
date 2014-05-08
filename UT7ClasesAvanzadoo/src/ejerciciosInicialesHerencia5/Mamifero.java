@@ -1,7 +1,5 @@
 package ejerciciosInicialesHerencia5;
 
-import ejerciciosInicialesHerencia4.Empleados;
-
 public class Mamifero extends Animal {
 
 	private String nombreraza;
@@ -12,6 +10,6 @@ public class Mamifero extends Animal {
 
 	public static void main(String[] args) {
 		Mamifero m1 = new Mamifero(62, "11/11/11", "Alfonso", "Toledo");
-		System.out.println(m1.toString());
+		System.out.println(m1);
 	}
 }
