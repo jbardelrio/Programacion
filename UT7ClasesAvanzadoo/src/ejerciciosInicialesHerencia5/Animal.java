@@ -22,6 +22,13 @@ public class Animal {
 	private String nombrecliente;
 	private String direccion;
 	
+	public Animal(double peso, String fechanacimiento, String nombrecliente, String direccion) {
+		this.peso=peso;
+		this.fechanacimiento=fechanacimiento;
+		this.nombrecliente=nombrecliente;
+		this.direccion=direccion;
+	}
+	
 	public double getPeso() {
 		return peso;
 	}
@@ -53,16 +60,17 @@ public class Animal {
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
 	}
-
-	public Animal() {
+	
+	public static void main(String[] args) {
+		
 		
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Animal [peso=" + peso + ", fechanacimiento=" + fechanacimiento
+		return "Animal: peso=" + peso + ", fechanacimiento=" + fechanacimiento
 				+ ", nombrecliente=" + nombrecliente + ", direccion="
-				+ direccion + "]";
+				+ direccion + " ";
 	}
 	
 	
