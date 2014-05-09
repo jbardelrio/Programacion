@@ -9,7 +9,7 @@ public class PruebaPublicacion {
 		p1.setFecha("07/05/2012");
 		
 		Revista r1 = new Revista();
-		r1.setNumero(11);
+		r1.setNumeros(11);
 		r1.setEditor("Azul");
 		r1.setFecha("30/11/11");
 		

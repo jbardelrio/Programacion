@@ -1,19 +1,18 @@
 package ejerciciosInicialesHerencia2;
 
 public class Revista extends Publicacion {
+	private int numeros;
 
-	private int numero;
-		
-	public int getNumero() {
-		return numero;
+	public int getNumeros() {
+		return numeros;
 	}
 
-	public void setNumero(int numero) {
-		this.numero = numero;
+	public void setNumeros(int numeros) {
+		this.numeros = numeros;
 	}
-
-	@Override
+	
 	public String toString() {
-		return super.toString() + " " + this.numero;
+		return super.toString() + " " + this.numeros + " numeros por año"; 
 	}
+	
 }

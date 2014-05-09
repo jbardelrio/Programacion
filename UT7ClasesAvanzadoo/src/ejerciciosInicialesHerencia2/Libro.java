@@ -1,10 +1,8 @@
 package ejerciciosInicialesHerencia2;
 
 public class Libro extends Publicacion {
-
 	private String autor;
 	private String ISBN;
-	
 	public String getAutor() {
 		return autor;
 	}
@@ -17,9 +15,8 @@ public class Libro extends Publicacion {
 	public void setISBN(String iSBN) {
 		ISBN = iSBN;
 	}
-	@Override
-	public String toString() {
-		return super.toString() + " " + this.autor + " " + this.ISBN;
-	}
 	
+	public String toString() {
+		return  this.ISBN + ":" + super.toString() + " " + this.autor; 
+	}
 }
