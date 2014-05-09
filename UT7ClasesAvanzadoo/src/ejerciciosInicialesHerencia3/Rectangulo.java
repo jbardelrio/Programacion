@@ -1,27 +1,22 @@
 package ejerciciosInicialesHerencia3;
-
 import java.util.Scanner;
 
+
 public class Rectangulo extends Cuadrado {
+
+	private int largo;
 	
-	private static int largo;
-	private static int ancho;
 
 	public Rectangulo(int ancho, int largo) {
-		if (ancho > 0) {
-			this.ancho=ancho;
-		}else{
-			this.ancho=5;
-		}
-		
+		super(ancho);
+
 		if (largo > 0) {
-			this.largo=largo;
-		}else{
-			this.largo=5;
+			this.largo = largo;
+		} else {
+			this.largo = LADO_PREDEFINIDO;
 		}
 	}
 
-	
 	public int getLargo() {
 		return largo;
 	}
@@ -30,55 +25,47 @@ public class Rectangulo extends Cuadrado {
 		this.largo = largo;
 	}
 
-	public int getAncho() {
-		return this.ancho;
-	}
-
-	public void setAncho(int ancho) {
-		this.ancho = super.getAncho();
-	}
-
-	public static int perimetroRectangulo(){
-		//P = 2∑ a + 2∑ b
+	public int perimetro() {
+		// P = 2¬∑ a + 2¬∑ b
 		int perimetro;
-		return perimetro = (2 * ancho) + (2 * largo);
+		return perimetro = (2 * getAncho()) + (2 * largo);
 	}
-	
-	public static int areaRectangulo(){
-		//A= a ∑ b
+
+	public int area() {
+		// A= a ¬∑ b
 		int area;
-		return area = ancho * largo;
+		return area = getAncho() * largo;
 	}
-	
-	public static void horizontalVertical(){
-		
-		if (ancho > largo) {
-			System.out.println("El rect·ngulo es horizontal");
-		}else{
-			System.out.println("El rect·ngulo es vertical");
+
+	public void horizontalVertical() {
+
+		if (getAncho() > largo) {
+			System.out.println("El rect√°ngulo es horizontal");
+		} else {
+			System.out.println("El rect√°ngulo es vertical");
 		}
 	}
 	
-	public void dibujarRectangulo(int ancho, int largo){
-		
-		for (int i=0;i < largo;i++){
-			for(int j=0;j<ancho;j++){
-				System.out.print("* ");
-			}
-				System.out.println("");
-			} 
+	public boolean esHorizontal() {
+
+		if (getAncho() > largo) {
+			return true;
+		} else {
+			return false;
+		}
 	}
+
+	public void dibujar() {
+		dibujar(getAncho(),largo);
+	}
+
 	public static void main(String[] args) {
-		
+
 		Scanner entrada = new Scanner(System.in);
-		Rectangulo r1 = new Rectangulo(ancho, largo);
+		System.out.println("\nPor favor introduzca el ancho y largo: ");
+		Rectangulo r1 = new Rectangulo(entrada.nextInt(), entrada.nextInt());
 
-		//System.out.println("\nPor favor introduzca el ancho: ");
-		//ancho = entrada.nextInt();
-		System.out.println("\nPor favor introduzca el largo: ");
-		largo = entrada.nextInt();
-
-		r1.dibujarRectangulo(ancho, largo);
+		r1.dibujar();
 
 	}
 

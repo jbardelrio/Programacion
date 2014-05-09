@@ -1,24 +1,18 @@
 package ejerciciosInicialesHerencia4;
 
-public class EmpleadoAsalariado {
 
-	public double salarioSemanal;
-	
-	public double getSalarioSemanal() {
+public class EmpleadoAsalariado extends Empleados {
+	private int salarioSemanal;
+
+	public int getSalarioSemanal() {
 		return salarioSemanal;
 	}
 
-	public void setSalarioSemanal(double salarioSemanal) {
+	public void setSalarioSemanal(int salarioSemanal) {
 		this.salarioSemanal = salarioSemanal;
 	}
 
-	public EmpleadoAsalariado() {
-		
+	public int calculaSalarioSemanal() {
+		return this.salarioSemanal;
 	}
-
-	public static void main(String[] args) {
-		Empleados e2 = new Empleados();
-		System.out.println(Empleados.calculaSalarioSemanal(7, 2));
-	}
-
 }

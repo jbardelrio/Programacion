@@ -63,6 +63,8 @@ public class Animal {
 	
 	public static void main(String[] args) {
 		
+		Animal a1 = new Animal(30, "01/01/02", "dueño", "Madrid");
+		System.out.println(a1);
 		
 	}
 	
@@ -72,6 +74,7 @@ public class Animal {
 				+ ", nombrecliente=" + nombrecliente + ", direccion="
 				+ direccion + " ";
 	}
+	
 	
 	
 

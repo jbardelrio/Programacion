@@ -8,34 +8,23 @@ package ejerciciosInicialesHerencia4;
  * Debe haber un método calculaSalarioSemanal que se puede aplicar a ambos.
  */
 
-public class Empleados extends Object{
+public abstract class Empleados {
+	private String nombre;
+	private String ocupacion;
 	
-	public String nombre;
-	public String ocupacion;
-
 	public String getNombre() {
 		return nombre;
 	}
-
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
 	public String getOcupacion() {
 		return ocupacion;
 	}
-
 	public void setOcupacion(String ocupacion) {
 		this.ocupacion = ocupacion;
 	}
-
-	public Empleados() {
-		
-	}
-
-	public static double calculaSalarioSemanal(int precioHoras, int horasTrabajadas){
-		double salario;
-		return salario = precioHoras * horasTrabajadas;	
-	}
-
+	
+	public abstract int calculaSalarioSemanal();
+	
 }
