@@ -1,4 +1,4 @@
-package ejerciciosInicialesHerencia5;
+package ejerciciosInicialesHerencia5_6;
 
 public class Pez extends Animal {
 	

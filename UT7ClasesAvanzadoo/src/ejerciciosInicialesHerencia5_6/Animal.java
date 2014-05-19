@@ -1,4 +1,4 @@
-package ejerciciosInicialesHerencia5;
+package ejerciciosInicialesHerencia5_6;
 
 /*
  * Realizar una jerarquía de clases necesaria para implementar la base de datos de una clínica veterinaria 
