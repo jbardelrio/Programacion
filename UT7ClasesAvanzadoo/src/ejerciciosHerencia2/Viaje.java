@@ -152,9 +152,7 @@ public class Viaje  {
 		System.out.println("Numero Total de Horas entre las dos Fechas: "+ cantidadTotalMinutos(calFechaInicial,calFechaFinal));
 		
 		System.out.println("Coste del viaje: " + coste(10, 2.6, 12));
-		
-		
-
+				
 	} 
 	
 }
