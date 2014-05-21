@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class ParadaActividad extends Parada {
 
-	public ParadaActividad(String ciudad, Date horabajada, Date horasubida) {
+	public ParadaActividad(String ciudad, String horabajada, String horasubida) {
 		super(ciudad, horabajada, horasubida);
 	}
 

@@ -7,7 +7,7 @@ public class ParadaLibre extends Parada {
 
 	
 
-	public ParadaLibre(String ciudad, Date horabajada, Date horasubida) {
+	public ParadaLibre(String ciudad, String horabajada, String horasubida) {
 		super(ciudad, horabajada, horasubida);
 	}
 

@@ -5,10 +5,10 @@ import java.util.Date;
 public class Parada{
 
 	private String ciudad;
-	private Date horabajada;
-	private Date horasubida;
+	private String horabajada;
+	private String horasubida;
 
-	public Parada(String ciudad, Date horabajada, Date horasubida) {
+	public Parada(String ciudad, String horabajada, String horasubida) {
 		this.ciudad = ciudad;
 		this.horabajada = horabajada;
 		this.horasubida = horasubida;
@@ -22,19 +22,19 @@ public class Parada{
 		this.ciudad = ciudad;
 	}
 
-	public Date getHorabajada() {
+	public String getHorabajada() {
 		return horabajada;
 	}
 
-	public void setHorabajada(Date horabajada) {
+	public void setHorabajada(String horabajada) {
 		this.horabajada = horabajada;
 	}
 
-	public Date getHorasubida() {
+	public String getHorasubida() {
 		return horasubida;
 	}
 
-	public void setHorasubida(Date horasubida) {
+	public void setHorasubida(String horasubida) {
 		this.horasubida = horasubida;
 	}
 
