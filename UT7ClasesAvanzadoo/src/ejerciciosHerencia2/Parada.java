@@ -1,7 +1,5 @@
 package ejerciciosHerencia2;
 
-import java.util.Date;
-
 public class Parada{
 
 	private String ciudad;
@@ -44,5 +42,12 @@ public class Parada{
 				+ ", horasubida=" + horasubida + "]";
 	}
 	
+	public static void main(String[] args) {
+		Parada P1 = new Parada("Gerindote", "08:45", "09:10");
+		System.out.println(P1);
+		
+		Parada P2 = new Parada("La Puebla", "09:10", "09:35");
+		System.out.println(P2);
+	}
 
 }

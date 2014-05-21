@@ -1,8 +1,5 @@
 package ejerciciosHerencia2;
 
-import java.util.Arrays;
-import java.util.Date;
-
 public class ParadaActividad extends Parada {
 
 	public ParadaActividad(String ciudad, String horabajada, String horasubida) {
